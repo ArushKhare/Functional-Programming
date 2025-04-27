@@ -54,7 +54,7 @@ if __name__ == '__main__':
 
     # Test sub
     b = sub(lambda x : x + 1)(lambda x : x - 1)
-    print("b(2) =", b(2)) # Should result in 2
+    print("b(2) =", b(2)) # Should result in 2 (always 2 since x gets cancelled out)
 
     # Test mult
     c = mult(lambda x : x + 1)(lambda x : x - 1)
