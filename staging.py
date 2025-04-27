@@ -2,7 +2,7 @@ import time
 
 # Staging allows us to finish expensive computations early on and reference the
 # result as we need it. This allows our code to not have to repeatedly perform the 
-# expensive computation. This results in greater efficiency.
+# expensive computations. This results in greater efficiency.
 
 def get_10_slowly():
     time.sleep(5) # Waits for 5 seconds
