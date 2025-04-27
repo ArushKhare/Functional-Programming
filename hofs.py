@@ -7,8 +7,6 @@ from typeguard import typechecked
 # Return similar in style to SML (Standard ML)
 # These functions are not curried
 
-T = TypeVar('T', bound='type')
-
 @typechecked
 def map(f: Callable, A: List):
     if A == []:
