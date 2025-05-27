@@ -66,7 +66,7 @@ def scanCPS(f: Callable):
             def con(k : Callable):
                 if (L == []):
                     return k([])
-                return k(scanCPS(f)(f(L[0], z))(L[1::])(lambda res : [f(L[0], z)] + res))
+                return scanCPS(f)(f(L[0], z))(L[1::])(lambda res : k([f(L[0], z)] + res))
             return con
         return fun2
     return fun1
